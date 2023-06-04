@@ -72,11 +72,6 @@ else:
     outputs = model.generate(inputs.input_ids, attention_mask=inputs.attention_mask)
     predicted_summary = tok.batch_decode(outputs, skip_special_tokens=True)
 
-results_rouge = rouge.compute(predictions=predicted_summary,references=ground_truths)
-results_bertscore = bertscore.compute(predictions=predicted_summary,references=ground_truths, lang="en")
-modelsbert = loadModel(modelsbert_path)
-results_sBERT = calcSBERTScore(modelsbert,predicted_summary,ground_truths)
-
 # Measure time for results_rouge
 start_time = time.time()
 results_rouge = rouge.compute(predictions=predicted_summary, references=ground_truths)
@@ -90,6 +85,7 @@ end_time = time.time()
 results_bertscore_time = end_time - start_time
 
 # Measure time for results_sBERT
+modelsbert = loadModel(modelsbert_path)
 start_time = time.time()
 results_sBERT = calcSBERTScore(modelsbert, predicted_summary, ground_truths)
 end_time = time.time()
