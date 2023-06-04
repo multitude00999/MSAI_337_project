@@ -1,0 +1,10 @@
+text_summarization:
+  dataset:
+  data_proportion: 0.05
+  metric: 
+  model: 
+  correlation_coefficient: pearson
+  processed_test_dir: ../../data/processed/processed_test
+  processed_train_dir: ../../data/processed/processed_train
+  raw_dataset_dir: ../../data/raw/raw_dataset
+  test_size: 0.05

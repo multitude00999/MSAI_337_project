@@ -1,0 +1,24 @@
+text_summarization:
+    CNN:
+        dataset_name: cnn_dailymail
+        dataset_config: 3.0.0
+        dataset_split: validation
+        dataset_path: ../../data/raw/CNN/
+        dataset_input: article
+        dataset_ground_truth: highlights
+        dataset_praportion: 0.5
+        results_path: ../../results/CNN/
+        results_filename: results_CNN
+        correlation_coefficient: pearson
+    summeval:
+        dataset_name: mteb/summeval
+        dataset_config: None
+        dataset_split: test
+        dataset_path: ../../data/raw/summeval/
+        dataset_input: text
+        dataset_ground_truth: human_summaries
+        dataset_praportion: 0.5
+        results_path: ../../results/summeval/
+        results_filename: results_summeval
+        correlation_coefficient: pearson
+    

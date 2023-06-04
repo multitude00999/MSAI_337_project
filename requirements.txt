@@ -1,0 +1,9 @@
+sentence_transformers
+numpy==1.17
+bert_score
+datasets
+transformers
+evaluate
+rogue
+sentencepiece
+bert_score
