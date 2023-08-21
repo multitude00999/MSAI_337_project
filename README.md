@@ -1,6 +1,6 @@
 # sBERT score: Evaluating text generation using Sentence BERT
 
-This repository consists the code of final project of course [MSAI 337](https://www.mccormick.northwestern.edu/artificial-intelligence/curriculum/descriptions/msai-337.html) at Northwestern Univeristy in Spring 2023 taught by Dr. David Demeter. 
+This repository consists the code of final project of course [MSAI 337](https://www.mccormick.northwestern.edu/artificial-intelligence/curriculum/descriptions/msai-337.html) at Northwestern University in Spring 2023 taught by Dr. David Demeter. 
 
 ## Abstract
 Text generation is a challenging task that requires evaluating the quality of generated text. Existing automatic metrics, such as ROUGE and BLEU scores, lack semantic understanding and struggle with paraphrased text. To address these limitations, semantic evaluation metrics like BERTScore have been proposed, but their computational cost remains a challenge. In this paper, we introduce sBERTScore, a novel evaluation metric inspired by BERTScore, aimed at reducing computational time while maintaining performance. We evaluate sBERTScore on machine translation and summarization tasks using standard datasets, comparing it with exact string matching metrics like ROGUE Score and semantic metrics like BERTScore. Our results demonstrate the effectiveness of sBERTScore in capturing semantic similarities between generated and reference text, making it a promising evaluation metric for text generation.
